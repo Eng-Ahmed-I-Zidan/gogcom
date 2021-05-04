@@ -1,0 +1,266 @@
+/* sign In Gog Now */
+.ng-hide{ display: none !important; }
+
+.Start-playing-with-gog-sign-in,
+.Start-playing-with-gog-create-new-account{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  max-width: 390px;
+  display: inline-block;
+  background: #dedede;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15),0 1px 3px rgba(0,0,0,0.15);
+  vertical-align: middle;
+  overflow: hidden;
+  text-align: left;
+  -moz-box-shadow: 0 0 15px rgba(0,0,0,0.15),0 1px 3px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.15),0 1px 3px rgba(0,0,0,0.15);
+  font: 400 15px 'Lato', sans-serif;
+  user-select: none;
+  outline: none;
+  z-index: 99;
+  margin: 0;
+  transition: opacity .2s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+.Start-playing-with-gog-sign-in.is-active,
+.Start-playing-with-gog-create-new-account.is-active{
+  animation: banner-is-active .1s ease forwards;
+  animation-delay: .4s;
+}
+@keyframes banner-is-active{
+  0%{
+    visibility: hidden;
+    opacity: 0;
+  }
+  100%{
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.Start-playing-with-gog-sign-in .close-login-page,
+.Start-playing-with-gog-create-new-account .close-login-page{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 35px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+  z-index: 3;
+}
+.form--register{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 25px 30px 30px;
+  z-index: 1;
+}
+.Start-playing-with-gog-sign-in .logo-gog,
+.Start-playing-with-gog-create-new-account .logo-gog{
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 27px;
+  vertical-align: middle;
+  width: 100%;
+  text-align: center;
+}
+.Start-playing-with-gog-sign-in .logo-gog svg,
+.Start-playing-with-gog-create-new-account .logo-gog svg{
+	width: 46px;
+	height: 42px;
+	margin-right: 15px;
+	fill: #595959;
+  display: inline-block;
+  vertical-align: middle;
+}
+.Start-playing-with-gog-sign-in .logo-gog .form__title--text,
+.Start-playing-with-gog-create-new-account .logo-gog .form__title--text{
+	text-transform: uppercase;
+	color: #595959;
+	font-size: 30px;
+	font-weight: 300;
+  display: inline-block;
+  vertical-align: middle;
+}
+.Start-playing-with-gog-sign-in .form-mail-pass,
+.Start-playing-with-gog-create-new-account .form-mail-pass{
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.Start-playing-with-gog-sign-in .form-mail-pass input[type=submit],
+.Start-playing-with-gog-create-new-account .form-mail-pass input[type=submit],
+.Start-playing-with-gog-create-new-account .form-mail-pass .signup,
+.Start-playing-with-gog-sign-in .form-mail-pass .signup{
+  width: 330px;
+	height: 42px;
+	padding: 10px 15px;
+	background: #ededed;
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+	color: rgba(0,0,0,0.5);
+	border: 1px solid #b1b1b1;
+	margin: 0 0 12px 0;
+	transition: none;
+	display: block;
+  font-weight: 600;
+  font-size: 13px;
+  outline: none;
+  margin: 0;
+  background: linear-gradient(#9fbf00, #80ab00);
+  background-color: #9fbf00;
+  border: 1px solid #7ca600;
+  color: #FFF;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+.Start-playing-with-gog-create-new-account .form-mail-pass .signup,
+.Start-playing-with-gog-sign-in .form-mail-pass .signup{ background: #eeddd5; color: #f25100; border-color: #f25100; }
+
+.Start-playing-with-gog-sign-in .form-mail-pass input[name=password],
+.Start-playing-with-gog-create-new-account .form-mail-pass input[name=password]{ margin: 0 0 20px 0; }
+
+.Start-playing-with-gog-sign-in .form-mail-pass input,
+.Start-playing-with-gog-create-new-account .form-mail-pass input {
+	width: 330px;
+	height: 42px;
+	padding: 10px 15px;
+	background: #ededed;
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+	color: rgba(0,0,0,0.5);
+	border: 1px solid #b1b1b1;
+	margin: 0 0 12px 0;
+	transition: none;
+	display: block;
+  font-weight: 600;
+  font-size: 13px;
+  outline: none;
+}
+.Start-playing-with-gog-create-new-account .form-mail-pass .required_conditions_input_create_new_account{
+  position: absolute;
+  color: #f25100;
+  display: inline-block;
+  top: 13px;
+  right: 10px;
+  margin-left: 25px;
+  padding: 0px 5px 3px 5px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: capitalize;
+  user-select: none;
+  max-width: 40%;
+  background: #eeddd5;
+}
+.Start-playing-with-gog-create-new-account .form-mail-pass input[name=email] + .required_conditions_input_create_new_account{ top: 68px; }
+.Start-playing-with-gog-create-new-account .form-mail-pass input[name=password] + .required_conditions_input_create_new_account{ top: 121px; }
+.Start-playing-with-gog-create-new-account .form-mail-pass label{
+  width: 330px;
+  font-size: 13px;
+  margin-bottom: 15px;
+  color: rgba(0,0,0,0.6);
+  text-align: center;
+}
+.Start-playing-with-gog-create-new-account .form-mail-pass label a{
+	text-decoration: underline;
+	color: rgba(0,0,0,0.8);
+  font-weight: 600;
+}
+.Start-playing-with-gog-sign-in .form-mail-pass input[type=submit]:hover,
+.Start-playing-with-gog-create-new-account .form-mail-pass input[type=submit]:hover{ background: linear-gradient(#a3c400, #84b000); background-color: #a3c400; }
+
+.Start-playing-with-gog-sign-in .form__separator-text, .Start-playing-with-gog-create-new-account .form__separator-text {
+	position: relative;
+	width: 100%;
+	color: rgba(0,0,0,.3);
+	overflow: hidden;
+	display: block;
+	text-align: center;
+	margin: 7px 0;
+	font-size: 11px;
+	font-weight: 600;
+}
+.Start-playing-with-gog-sign-in .form__separator-text span,
+.Start-playing-with-gog-create-new-account .form__separator-text span{
+  position: relative;
+}
+
+.Start-playing-with-gog-sign-in .form__separator-text .form__separator-text-or:after,
+.Start-playing-with-gog-sign-in .form__separator-text .form__separator-text-or:before,
+.Start-playing-with-gog-create-new-account .form__separator-text .form__separator-text-or:after,
+.Start-playing-with-gog-create-new-account .form__separator-text .form__separator-text-or:before{
+  content: "";
+  position: absolute;
+  width: 330px;
+  height: 1px;
+  background: rgba(0,0,0,.1);
+  top: 50%;
+}
+.Start-playing-with-gog-sign-in .form__separator-text .form__separator-text-or:after,
+.Start-playing-with-gog-create-new-account .form__separator-text .form__separator-text-or:after{
+  left: 100%;
+  margin-left: 10px;
+}
+.Start-playing-with-gog-sign-in .form__separator-text .form__separator-text-or:before,
+.Start-playing-with-gog-create-new-account .form__separator-text .form__separator-text-or:before{
+  right: 100%;
+  margin-right: 10px;
+}
+
+.Start-playing-with-gog-sign-in .form__buttons-container-continue-with-facebbok, .Start-playing-with-gog-create-new-account .form__buttons-container-continue-with-facebbok {
+	position: relative;
+	width: 330px;
+	height: 42px;
+	display: block;
+	text-align: center;
+	line-height: 42px;
+	background: linear-gradient(to bottom, #4267b2, #375899);
+	color: #FFF;
+	text-transform: uppercase;
+	cursor: pointer;
+	text-decoration: none;
+	word-spacing: 2px;
+	letter-spacing: .5px;
+	font-size: 14px;
+	border-radius: 3px;
+	border: 1px solid #304d86;
+}
+
+.Start-playing-with-gog-sign-in .form__buttons-container-continue-with-facebbok:hover,
+.Start-playing-with-gog-create-new-account .form__buttons-container-continue-with-facebbok:hover{ background: linear-gradient(to bottom, #4c71bd, #375899); background-color: #4369b6; }
+.Start-playing-with-gog-sign-in .footer__link,
+.Start-playing-with-gog-create-new-account .footer__link {
+	position: relative;
+	width: 100%;
+	background: #d2d2d2;
+	display: block;
+	padding: 17px 0;
+	font-size: 13px;
+	color: #595555;
+	text-transform: capitalize;
+	text-align: center;
+}
+.Start-playing-with-gog-sign-in .footer__link .footer__link-sign-up-now::before {
+	content: "\2022";
+	position: relative;
+	display: inline-block;
+	margin: 0 10px;
+}
+.Start-playing-with-gog-create-new-account .footer__link{ justify-content: center; }
+
+.Start-playing-with-gog-sign-in .footer__link .footer__link-password-reset,
+.Start-playing-with-gog-sign-in .footer__link .footer__link-sign-up-now,
+.Start-playing-with-gog-create-new-account .footer__link .footer__link-old-account {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+}
+
+/* End With Sign In Gog.com */

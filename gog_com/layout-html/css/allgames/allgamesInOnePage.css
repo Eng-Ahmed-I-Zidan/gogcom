@@ -1,0 +1,191 @@
+/* Start With [cyberpunk2077] */
+@media(min-width: 1681px){
+  .cyberpunk2077 .productcard-player.productcard-image,
+  .cyberpunk2077 .productcard-background.productcard-image{
+  	background-image: url('https://images.gog-statics.com/5643a7c831df452d29005caeca24c28cdbfaa6fbea5a9556b147ee26d325fa70_bg_crop_1920x655.jpg');
+  }
+}
+@media(min-width: 1376px) and (max-width: 1681px){
+  .cyberpunk2077 .productcard-player.productcard-image,
+  .cyberpunk2077 .productcard-background.productcard-image{
+  	background-image: url('https://images.gog-statics.com/5643a7c831df452d29005caeca24c28cdbfaa6fbea5a9556b147ee26d325fa70_bg_crop_1680x655.jpg');
+  }
+}
+@media(min-width: 801px) and (max-width: 1376px){
+  .cyberpunk2077 .productcard-player.productcard-image,
+  .cyberpunk2077 .productcard-background.productcard-image{
+  	background-image: url('https://images.gog-statics.com/5643a7c831df452d29005caeca24c28cdbfaa6fbea5a9556b147ee26d325fa70_bg_crop_1366x655.jpg');
+  }
+}
+@media(min-width: 481px) and (max-width: 801px){
+  .cyberpunk2077 .productcard-player.productcard-image,
+  .cyberpunk2077 .productcard-background.productcard-image{
+  	background-image: url('https://images.gog-statics.com/5643a7c831df452d29005caeca24c28cdbfaa6fbea5a9556b147ee26d325fa70_bg_crop_800x655.jpg');
+  }
+}
+@media(max-width: 481px){
+  .cyberpunk2077 .productcard-player.productcard-image,
+  .cyberpunk2077 .productcard-background.productcard-image{
+  	background-image: url('https://images.gog-statics.com/5643a7c831df452d29005caeca24c28cdbfaa6fbea5a9556b147ee26d325fa70_bg_crop_480x655.jpg');
+  }
+}
+/* End With [cyberpunk2077] */
+/* Start With [baldursgate3] */
+@media(min-width: 1681px){
+  .baldursgate3 .productcard-player.productcard-image,
+  .baldursgate3 .productcard-background.productcard-image{
+  	background-image: url('https://images.gog-statics.com/4d4528321e54adb1529fd2c74511ad3fa701f80093f6ced84f0ffd7a30c5db07.jpg');
+  }
+}
+@media(min-width: 1376px) and (max-width: 1681px){
+  .baldursgate3 .productcard-player.productcard-image,
+  .baldursgate3 .productcard-background.productcard-image{
+  	background-image: url('https://images.gog-statics.com/4d4528321e54adb1529fd2c74511ad3fa701f80093f6ced84f0ffd7a30c5db07_bg_crop_1680x655.jpg');
+  }
+}
+@media(min-width: 801px) and (max-width: 1376px){
+  .baldursgate3 .productcard-player.productcard-image,
+  .baldursgate3 .productcard-background.productcard-image{
+  	background-image: url('https://images.gog-statics.com/4d4528321e54adb1529fd2c74511ad3fa701f80093f6ced84f0ffd7a30c5db07_bg_crop_1366x655.jpg');
+  }
+}
+@media(min-width: 481px) and (max-width: 801px){
+  .baldursgate3 .productcard-player.productcard-image,
+  .baldursgate3 .productcard-background.productcard-image{
+  	background-image: url('https://images.gog-statics.com/4d4528321e54adb1529fd2c74511ad3fa701f80093f6ced84f0ffd7a30c5db07_bg_crop_800x655.jpg');
+  }
+}
+@media(max-width: 481px){
+  .baldursgate3 .productcard-player.productcard-image,
+  .baldursgate3 .productcard-background.productcard-image{
+  	background-image: url('https://images.gog-statics.com/4d4528321e54adb1529fd2c74511ad3fa701f80093f6ced84f0ffd7a30c5db07_bg_crop_480x655.jpg');
+  }
+}
+.baldursgate3 .layout-main .layout-main-col .content-summary-section .description .banner.in-dev-banner{
+  position: relative;
+  background: #e9cbae;
+  color: #543200;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 16px 20px;
+  display: block;
+  height: auto;
+}
+.baldursgate3 .layout-main .layout-main-col .content-summary-section .description .banner.in-dev-banner .banner__header {
+  position: relative;
+  display: block;
+  line-height: 24px;
+  font-size: 16px;
+}
+.baldursgate3 .layout-main .layout-main-col .content-summary-section .description .banner.in-dev-banner .in-dev-banner__bullet {
+  position: relative;
+  display: block;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+.baldursgate3 .layout-main .layout-main-col .content-summary-section .description .banner.in-dev-banner .in-dev-banner__bullet:before{
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #060606;
+  top: 50%;
+  left: 0;
+  margin-top: 0;
+}
+.baldursgate3 .layout-main .layout-main-col .content-summary-section .description .banner.in-dev-banner .in-dev-banner__bullet a{
+  text-decoration: underline;
+  font-size: 16px;
+  color: currentColor;
+  padding-left: 10px;
+  font-weight: 400;
+}
+.baldursgate3 .layout-main .layout-main-col .content-summary-section .description .banner.in-dev-banner .in-dev-banner__graphic{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -45.5px;
+}
+.baldursgate3 .layout-main .layout-main-col .content-summary-section .description .banner.in-dev-banner .in-dev-banner__graphic svg:first-of-type{
+  position: relative;
+  width: 91px;
+  height: 91px;
+  animation: rotate 20s linear infinite;
+}
+@keyframes rotate{
+  0%{ transform: rotate(0); }
+  100%{ transform: rotate(360deg); }
+}
+.baldursgate3 .layout-main .layout-main-col .content-summary-section .description .banner.in-dev-banner .in-dev-banner__graphic svg:last-of-type{
+  position: absolute;
+  width: 47px;
+  height: 39px;
+  top: 50%;
+  margin-top: -19.5px;
+  left: 20px;
+}
+/* End With [baldursgate3] */
+/* Start With [theouterworld] */
+@media(min-width: 1681px){
+  .theouterworld .productcard-player.productcard-image,
+  .theouterworld .productcard-background.productcard-image{
+  	background-image: url('https://images.gog-statics.com/66d28031e0ddc6c31d914b10aa0943736c877428518223b6c73ab262819a29bb_bg_crop_1920x655.jpg');
+  }
+}
+@media(min-width: 1376px) and (max-width: 1681px){
+  .theouterworld .productcard-player.productcard-image,
+  .theouterworld .productcard-background.productcard-image{
+  	background-image: url('https://images.gog-statics.com/66d28031e0ddc6c31d914b10aa0943736c877428518223b6c73ab262819a29bb_bg_crop_1680x655.jpg');
+  }
+}
+@media(min-width: 801px) and (max-width: 1376px){
+  .theouterworld .productcard-player.productcard-image,
+  .theouterworld .productcard-background.productcard-image{
+  	background-image: url('https://images.gog-statics.com/66d28031e0ddc6c31d914b10aa0943736c877428518223b6c73ab262819a29bb_bg_crop_1366x655.jpg');
+  }
+}
+@media(min-width: 481px) and (max-width: 801px){
+  .theouterworld .productcard-player.productcard-image,
+  .theouterworld .productcard-background.productcard-image{
+  	background-image: url('https://images.gog-statics.com/66d28031e0ddc6c31d914b10aa0943736c877428518223b6c73ab262819a29bb_bg_crop_800x655.jpg');
+  }
+}
+@media(max-width: 481px){
+  .theouterworld .productcard-player.productcard-image,
+  .theouterworld .productcard-background.productcard-image{
+  	background-image: url('https://images.gog-statics.com/66d28031e0ddc6c31d914b10aa0943736c877428518223b6c73ab262819a29bb_bg_crop_480x655.jpg');
+  }
+}
+.theouterworld .layout-main .layout-main-col .content-summary-section .description .banner.in-dev-banner{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.theouterworld .layout-main .layout-main-col .content-summary-section .description .banner.in-dev-banner a img{
+  position: relative;
+  width: 300px;
+  display: block;
+  overflow: hidden;
+  outline: none;
+}
+.theouterworld .layout-main .layout-main-col .content-summary-section .description .banner.in-dev-banner div{
+  margin-left: 15px;
+  display: block;
+  font-size: 17px;
+  font-weight: 400;
+}
+.theouterworld .layout-main .layout-main-col .content-summary-section .description .banner.in-dev-banner div a{
+  display: inline-block;
+  text-decoration: underline;
+  color: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+.theouterworld .layout-main .layout-main-col .content-summary-section .goodies .goodies--inline .goodies__item{ display: block; }
+/* End With [theouterworld] */

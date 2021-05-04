@@ -1,0 +1,500 @@
+.product-tile_for---all--place--games{
+  position: relative;
+  float: left;
+  clear: right;
+  margin: 0 0 24px 24px;
+  width: calc(25% - 24px);
+}
+@media(max-width: 1000px){
+  .product-tile_for---all--place--games:not(.product-tile--games--list){
+    margin: 0 0 8px 8px !important;
+    width: calc(25% - 8px) !important;
+  }
+}
+@media(max-width: 749px){
+ .product-tile_for---all--place--games:not(.product-tile--games--list){
+    width: calc(50% - 8px) !important;
+  }
+}
+
+.product-tile_for---all--place--games:not(.product-tile--games--list):before{
+  content: '';
+  display: block;
+  width: 100%;
+  border-bottom: 84px solid transparent;
+  padding-bottom: 45.318%;
+}
+.product-tile_for---all--place--games .product-tile__content{
+  background: hsla(0,0%,98%,.6);
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.15);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  top: 0;
+  left: 0;
+  color: #1a1a1a;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  overflow: hidden;
+}
+.product-tile_for---all--place--games.product-tile_for---all--place--games--active .product-tile__content{
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,.2),0 1px 4px 0 rgba(0,0,0,.15);
+  background: #ececec;
+}
+.product-tile_for---all--place--games .product-tile__content .product-tile__title{
+  position: absolute;
+  bottom: 46px;
+  left: 0;
+  display: block;
+  padding: 8px 16px 0;
+  line-height: normal;
+  height: 38px;
+  max-width: 100%;
+  hyphens: auto;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 13px;
+  color: #1a1a1a;
+  text-align: left;
+}
+@media(max-width: 1000px){
+  .product-tile_for---all--place--games .product-tile__content .product-tile__title{
+    font-size: 12px !important;
+    padding: 8px 8px 0 !important;
+  }
+}
+.product-tile_for---all--place--games .product-tile__content .product-tile__cover{
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #d8d8d8;
+}
+.product-tile_for---all--place--games .product-tile__content .product-tile__cover:before{
+  content: '';
+  position: relative;
+  width: 100%;
+  padding-bottom: 45.70312%;
+  display: block;
+  overflow: hidden;
+}
+.product-tile_for---all--place--games .product-tile__content .product-tile__cover img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product-tile_for---all--place--games .product-tile__content .product-tile__labels{
+  position: absolute;
+  bottom: -6px;
+  height: auto;
+  margin: 0 !important;
+}
+.product-tile_for---all--place--games:not(.product-tile--games--list) .product-tile__content .product-tile__labels span{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.product-tile_for---all--place--games .product-tile__content .product-tile__labels span.product-tile__label--in-library{
+  background: #c7c7c7;
+  color: #8f8f8f;
+}
+.product-tile_for---all--place--games .product-tile__content .product-tile__labels span.product-tile__label--in-library svg{ fill: #8f8f8f; }
+.product-tile_for---all--place--games .product-tile__content .product-tile__info{
+  position: absolute;
+  bottom: 0;
+  height: 84px;
+  width: 100%;
+  padding: 38px 16px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media(max-width: 1000px){
+  .product-tile_for---all--place--games .product-tile__content .product-tile__info{
+    padding: 38px 8px 0 !important;
+  }
+}
+.product-tile_for---all--place--games:not(.product-tile--games--list) .product-tile__content .product-tile__info{ left: 0; }
+.product-tile_for---all--place--games.product-tile_for---all--place--games--active .product-tile__content .product-tile__info{ padding-right: 8px; }
+.product-tile_for---all--place--games .product-tile__content .product-tile__info .product-tile__platforms{
+  position: relative;
+  width: auto;
+  display: inline-block;
+}
+.product-tile_for---all--place--games.product-tile_for---all--place--games--active:not(.product-tile--games--list) .product-tile__content .product-tile__info .product-tile__platforms{ opacity: 0; }
+.product-tile_for---all--place--games .product-tile__content .product-tile__info .product-tile__platforms .big-spot__super-title-text{
+  position: relative;
+  color: rgba(0,0,0, .7);
+  text-transform: capitalize;
+  font-size: 13px;
+  display: inline-block;
+  line-height: normal;
+}
+.product-tile_for---all--place--games .product-tile__content .product-tile__info .product-tile__platforms .big-spot__super-title-text span{
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.product-tile_for---all--place--games .product-tile__content .product-tile__info .product-tile__buy-block{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+.product-tile_for---all--place--games .product-tile__content .product-tile__info .product-tile__buy-block .product-tile__prices{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.product-tile_for---all--place--games.product-tile_for---all--place--games--active .product-tile__content .product-tile__info .product-tile__buy-block .product-tile__prices{ transform: translateX(-41px); }
+.product-tile_for---all--place--games .product-tile__content .product-tile__info .product-tile__buy-block .product-tile__prices .menu-product__discount{
+  font-size: 14px;
+  color: #FFF;
+  padding: 4.5px 9px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+@media(max-width: 1000px){
+  .product-tile_for---all--place--games .product-tile__content .product-tile__info .product-tile__buy-block .product-tile__prices .menu-product__discount {
+  	font-size: 12px !important;
+  	padding: 2px 5px !important;
+  }
+}
+.product-tile_for---all--place--games:hover .product-tile__content .product-tile__info .product-tile__buy-block .product-tile__prices .menu-product__discount{
+  font-size: 14px !important;
+  padding: 4.5px 9px !important;
+}
+.product-tile_for---all--place--games .product-tile__content .product-tile__info .product-tile__buy-block .product-tile__prices .product-tile__prices-inner{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  text-align: right;
+  height: 30px;
+}
+.product-tile_for---all--place--games .product-tile__content .product-tile__info .product-tile__buy-block .product-tile__prices .product-tile__prices-inner span{
+  position: relative;
+  display: block;
+  color: #404040;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 17px;
+  margin-bottom: 2px;
+}
+@media(max-width: 1000px){
+  .product-tile_for---all--place--games .product-tile__content .product-tile__info .product-tile__buy-block .product-tile__prices .product-tile__prices-inner span{
+    font-size: 13px !important;
+    line-height: 15px !important;
+    margin-bottom: 4px !important;
+  }
+}
+.product-tile_for---all--place--games .product-tile__content .product-tile__info .product-tile__buy-block .product-tile__prices .product-tile__prices-inner span.product-tile__price{
+  color: #999;
+  line-height: 10px;
+  font-size: 10px;
+  text-decoration: line-through;
+  margin: 0;
+  margin-top: 1px;
+}
+@media(max-width: 1000px){
+  .product-tile_for---all--place--games .product-tile__content .product-tile__info .product-tile__buy-block .product-tile__prices .product-tile__prices-inner span.product-tile__price{
+    font-size: 9px !important;
+    line-height: 9px !important;
+    margin-top: 2px !important;
+    margin-bottom: 0 !important;
+  }
+}
+.product-tile_for---all--place--games .product-tile__content .product-tile__info .product-tile__buy-block .product-tile__prices .product-tile__prices-inner span:not(.product-tile__free):before{ content: '$\A0'; }
+.product-tile_for---all--place--games .product-tile__content .product-tile__info .product-tile__buy-block .product-state__price-btn{
+  position: absolute;
+  bottom: 0;
+  right: -50px;
+  background: linear-gradient(180deg,#a5c700,#86b300);
+  width: 33px;
+  border-radius: 3px;
+  border: 1px solid #7fab34;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.35);
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  z-index: 3;
+}
+.product-tile_for---all--place--games .product-tile__content .product-tile__info .product-tile__buy-block .product-state__price-btn:hover{ background: linear-gradient(180deg,#acce00,#8bba00); }
+.product-tile_for---all--place--games.product-tile_for---all--place--games--active .product-tile__content .product-tile__info .product-tile__buy-block .product-state__price-btn{ right: 0; }
+.product-tile_for---all--place--games .product-tile__content .product-tile__info .product-tile__buy-block .product-state__price-btn svg {
+	width: 22px;
+	height: 22px;
+	fill: #FFF;
+	display: block;
+}
+.product-tile__labels{
+  position: relative;
+  color: #FFF;
+  text-align: center;
+  border-radius: 2px;
+  padding: 0;
+  font-size: 11px;
+  text-transform: uppercase;
+  line-height: normal;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+@media(max-width: 550px){
+  .product-tile__labels{
+    width: 100% !important;
+    margin-bottom: 10px !important;
+  }
+}
+.product-tile__labels span{
+  display: flex;
+  position: relative;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-size: 10px;
+  align-items: center;
+  line-height: 14px;
+  margin-right: 8px;
+}
+.product-tile__labels span.product-tile__label--in-library{ background: hsla(0,0%,100%,.5); color: hsla(0,0%,100%,.7); }
+.product-tile__labels span.product-tile__label--in-library svg{ fill: hsla(0,0%,100%,.5); }
+.product-tile__labels span.product-tile__label--in-cart { background: #80ab00; }
+.product-tile__labels span.product-tile__label--is-wishlisted { background: #eca125; }
+.product-tile__labels span.product-tile__label--is-wishlisted svg{
+  fill: #FFF;
+  width: 16px;
+  height: 16px;
+  top: 0;
+}
+.product-tile__labels span.product-tile__label--is-upcoming{ background: #094a77; }
+.product-tile__labels span svg {
+	display: inline-block;
+	position: relative;
+	width: 13px;
+	height: 13px;
+	top: -1px;
+	margin-right: 5px;
+	fill: #FFF;
+}
+.menu-product__os{ position: relative; }
+.menu-product__os .product_isGame{
+  display: flex;
+  width: auto;
+  justify-content: flex-start;
+  align-items: center;
+}
+.menu-product__os .product_isGame i{
+  background-image: url('https://menu-static.gog-statics.com/assets/img/os_icons_1x.png');
+  width: 11px;
+  position: relative;
+  height: 11px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 4px;
+}
+.menu-product__os .product_isGame i.menu-product__os-icon--windows{ background-position: top 0 left -11px; }
+.menu-product__os .product_isGame i.menu-product__os-icon--mac{ background-position: top 0 left 0; }
+.menu-product__os .product_isGame i.menu-product__os-icon--linux{ background-position: bottom 0 left 0; }
+.content.cf .menu-product__discount{
+  position: relative;
+  background: #78387b;
+  padding: 4px 15px;
+  border-radius: 3px;
+  margin: 0;
+  margin-right: 15px;
+  font-size: 25px;
+}
+@media(max-width: 1160px){
+  .content.cf .big-spots-container .menu-product__discount{
+    font-size: 20px !important;
+  }
+}
+@media(max-width: 800px){
+  .content.cf .big-spots-container .menu-product__discount{
+    font-size: 16px !important;
+    padding: 3px 9px;
+    margin-right: 8px;
+  }
+}
+@media(max-width: 680px){
+  .content.cf .big-spots-container .menu-product__discount{
+    font-size: 18px !important;
+    padding: 3px 10px !important;
+    margin-right: 12px !important;
+  }
+}
+@media(max-width: 550px){
+  .content.cf .big-spots-container .menu-product__discount{
+    font-size: 14px !important;
+  }
+}
+.content.cf .menu-product__discount .menu-product__discount-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0;
+}
+.content.cf .menu-product__discount .menu-product__discount-text:before{
+  content: '-\A0';
+}
+/* Start With Make Games In list */
+.product-tile--games--list{
+  width: 100%;
+  height: 92px;
+  margin: 0 !important;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 0;
+  display: block;
+  float: none;
+}
+@media (max-width: 1000px){
+  .product-tile--games--list{
+    height: 80px !important;
+  }
+}
+.product-tile--games--list .product-tile__content{
+  background: none;
+  box-shadow: none;
+  padding-left: 152px;
+  bottom: -1px;
+  top: -1px;
+  height: auto;
+}
+@media (max-width: 1000px){
+  .product-tile--games--list .product-tile__content{
+    padding-left: 124px !important;
+  }
+}
+.product-tile--games--list .product-tile__content .product-tile__title {
+	left: 152px;
+	padding: 0 !important;
+	width: calc(100% - 161px - 130px);
+	top: 25px;
+	height: 29px;
+}
+@media (max-width: 1000px){
+  .product-tile--games--list .product-tile__content .product-tile__title {
+    left: 124px !important;
+    top: 8px !important;
+    width: calc(100% - 130px) !important;
+    font-size: 13px !important;
+    word-break: unset !important;
+    white-space: break-spaces !important;
+    line-height: 13px !important;
+  }
+}
+.product-tile--games--list .product-tile__content .product-tile__cover{
+  width: 136px;
+  height: 76px;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+@media (max-width: 1000px){
+  .product-tile--games--list .product-tile__content .product-tile__cover{
+    width: 116px !important;
+    height: 64px !important;
+  }
+}
+.product-tile--games--list .product-tile__content .product-tile__cover:before{ content: ''; padding-bottom: 55.89%; }
+@media (max-width: 1000px){
+  .product-tile--games--list .product-tile__content .product-tile__cover:before{
+    padding-bottom: 55.89% !important;
+  }
+}
+.product-tile--games--list .product-tile__content .product-tile__info {
+	padding: 25px 15px 25px 0;
+	width: calc(100% - 152px);
+	right: 0;
+	height: 92px;
+}
+@media (max-width: 1000px){
+  .product-tile--games--list .product-tile__content .product-tile__info {
+    padding: 8px 8px 8px 0 !important;
+    height: 80px !important;
+    width: calc(100% - 124px) !important;
+    align-items: flex-end !important;
+  }
+}
+@media (max-width: 1000px){
+  .product-tile--games--list .menu-product__os{
+    height: 15px !important;
+  }
+}
+@media(max-width: 1000px){
+  .product-tile--games--list.product-tile_for---all--place--games:hover .product-tile__content .product-tile__info .product-tile__buy-block .product-tile__prices .menu-product__discount {
+    font-size: 12px !important;
+    padding: 2px 5px !important;
+  }
+}
+.product-tile--games--list .product-tile__content .product-tile__info .product-tile__platforms {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+.product-tile--games--list .product-tile__content .product-tile__info .product-tile__platforms .product-tile__labels{
+  position: relative;
+  bottom: 0;
+}
+@media(max-width: 1000px){
+  .product-tile--games--list .product-tile__content .product-tile__info .product-tile__platforms .product-tile__labels:not(.big-spot__ribbon-wrapper--for-lite-screen){
+    display: none !important;
+  }
+}
+@media(min-width: 1000px){
+  .product-tile--games--list .product-tile__content .product-tile__cover .product-tile__labels.big-spot__ribbon-wrapper--for-lite-screen{
+    display: none !important;
+  }
+}
+.product-tile__labels.big-spot__ribbon-wrapper--for-lite-screen span{
+  padding: 4px 8px !important;
+}
+.product-tile__labels.big-spot__ribbon-wrapper--for-lite-screen span svg{
+  margin: 0 !important;
+}
+.product-tile--games--list.product-tile_for---all--place--games--active .product-tile__content{
+  left: -8px;
+  right: -8px;
+  width: auto;
+  height: auto;
+}
+.product-tile--games--list.product-tile_for---all--place--games--active .product-tile__content .product-tile__cover{ left: 8px; }
+.product-tile--games--list.product-tile_for---all--place--games--active .product-tile__content .product-tile__title{ left: 160px; padding-right: 16px !important; }
+@media (max-width: 1000px){
+  .product-tile--games--list.product-tile_for---all--place--games--active .product-tile__content .product-tile__title{ left: 132px !important; padding-right: 16px !important;}
+}
+.product-tile--games--list.product-tile_for---all--place--games--active .product-tile__content .product-tile__info{ right: -8px; }
+.product-tile--games--list.product-tile_for---all--place--games--active .product-tile__content .product-tile__info .product-tile__no-buy-block-slug{ margin-right: 23px; }
+@media (max-width: 1000px){
+  .discover_games .product-tile--games--list.product-tile_for---all--place--games--active .product-tile__content .product-tile__info .product-tile__no-buy-block-slug{ margin-right: 16px !important; }
+  .discover_games .product-tile--games--list .product-tile__content .product-tile__info .product-tile__no-buy-block-slug{ font-size: 12px !important; }
+}
+@media (min-width: 1000px){
+  .product-tile_for---all--place--games.product-tile_for---all--place--games--active:not(.product-tile--games--list) .product-tile__content .product-tile__info .product-tile__no-buy-block-slug{ margin-right: 8px !important; }
+}
+.product-tile--games--list.product-tile_for---all--place--games--active .product-tile__content .product-tile__info .product-tile__buy-block .product-state__price-btn{ right: 8px; }
+.product-tile--games--list.product-tile_for---all--place--games--active .product-tile__content .product-tile__info .product-tile__buy-block .product-tile__prices{ transform: translateX(-49px); }

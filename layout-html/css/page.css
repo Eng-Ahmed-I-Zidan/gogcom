@@ -1,0 +1,1198 @@
+body{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	background: #090813;
+	width:100%;
+	background-image: url(https://gogalaxy.gog-statics.com/build/images/bg-bottom-1920-ad4eec1a.jpg),url(https://gogalaxy.gog-statics.com/build/images/bg-footer-1920-f6ac0813.jpg);
+	background-position: center bottom 842px,center bottom -598px;
+	background-repeat: no-repeat,no-repeat;
+}
+*{
+	box-sizing:border-box;
+	transition:all .4s ease;
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+}
+.ng-hide{ display: none !important; }
+
+/* Start With glx-overlay */
+.glx-overlay{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.glx-overlay.is-hidden{
+	visibility: hidden;
+	opacity: 0;
+}
+.glx-overlay.is-visible{
+	visibility: visible;
+	opacity: 1;
+}
+.glx-overlay .glx-overlay__glass{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	background: rgba(0,0,0,.5);
+}
+.glx-overlay .glx-overlay__box {
+	position: relative;
+	max-width: 130vh;
+	max-height: 80%;
+	width: 95%;
+	box-shadow: 0 0 100px 0 rgba(109,37,167,.25),0 0 7px 0 #8440dd,0 3px 20px 0 rgba(0,0,0,.33),0 0 75px 0 rgba(109,37,167,.25),0 0 15px 0 rgba(0,0,0,.16),0 1px 3px 0 rgba(0,0,0,.16);
+	display: flex;
+	z-index: 3;
+}
+.glx-overlay .glx-overlay__box .glx-overlay__hd-content{
+	position: relative;
+	width: 100%;
+	display: flex;
+	padding-bottom: 56.25%;
+	margin: 0;
+	height: 0;
+}
+.glx-overlay .glx-overlay__box .glx-overlay__hd-content iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/* End WIth glx-overlay */
+/* Start With glx-section glx-section--intro */
+.galaxy{
+	position: relative;
+	width:100%;
+	overflow:hidden;
+	color:#FFF;
+}
+.glx-section{
+	position: relative;
+	width: 100%;
+	height: 810px;
+	/* 960px https://gogalaxy.gog-statics.com/build/images/bg-cover-1080-1920-40a8b605.jpg */
+	/* 760px https://gogalaxy.gog-statics.com/build/images/bg-cover-768-1920-1903d1b3.jpg */
+	/* https://gogalaxy.gog-statics.com/build/images/bg-cover-900-1440-57bffc40.jpg */
+	background-image: url('https://gogalaxy.gog-statics.com/build/images/bg-cover-900-1920-72166a52.jpg');
+	background-position: top;
+	background-repeat: no-repeat;
+}
+.glx-section:after{
+	content: "";
+	position: absolute;
+	height: 90px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: url('https://gogalaxy.gog-statics.com/build/images/mask-1920-5d3f8b85.png');
+	display: block;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.glx-section .glx-section__video{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	right: 0;
+	transform: translateX(-50%);
+	opacity: 1;
+	height: 100%;
+}
+.glx-section .glx-section__top{
+	position: absolute;
+	z-index: 1;
+	right: 0;
+	top: 0;
+	font: 400 22px 'Lato', sans-serif;
+	text-transform: capitalize;
+}
+.glx-section .glx-section__top .glx-langs{
+	position: relative;
+	width: 100%;
+	padding: 30px;
+}
+.glx-section .glx-section__top .glx-langs span{
+	position: relative;
+	pointer-events: none;
+}
+.glx-section .glx-section__top .glx-langs span:after{
+	content: "";
+	position: absolute;
+	border-width: 5px 3px 0;
+	border-color: #FFF transparent transparent transparent;
+	border-style: solid;
+	top: 9px;
+	right: -10px;
+}
+.glx-section .glx-section__top .glx-langs ul {
+	display: none;
+	position: absolute;
+	margin: 0 auto;
+	list-style: none;
+	padding: 5px 15px;
+	width: 150px;
+	right: 0;
+	top: 80%;
+	background: #000;
+	bottom: auto;
+	border-radius: 3px;
+	color: #FFF;
+	left: 0;
+}
+.is-active{ display: block !important; }
+.glx-section .glx-section__top .glx-langs ul li {
+	padding: 10px 0;
+	margin: 0;
+	text-align: left;
+	display: block;
+	position: relative;
+}
+.glx-section .glx-section__top .glx-langs ul li input {
+	position: relative;
+	padding: 0 10px;
+	margin: 0;
+	width: 100%;
+	background: none;
+	border: none;
+	text-align: left;
+}
+.glx-section .glx-section__inner{
+	position: relative;
+	width: 1110px;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+.glx-section .glx-section__inner img,
+.bg-download-faq .glx-section--download .glx-section__inner img{
+	position: relative;
+	max-width: 65px;
+	padding: 51px 0 42px;
+	/* padding: 36px 0 29px; */
+	/* padding: 60px 0 53px; */
+	margin: 0;
+}
+.glx-section .glx-section__inner h1,
+.bg-download-faq .glx-section--download .glx-section__inner h1{
+	position: relative;
+	padding: 0;
+	margin: 0 0 3px;
+	font: 400 38px 'Lato', sans-serif;
+	text-transform: uppercase;
+}
+.glx-section .glx-section__inner p,
+.bg-download-faq .glx-section--download .glx-section__inner p{
+	font: 300 38px 'Lato', sans-serif;
+	line-height: 56px;
+}
+.glx-section .glx-section__play{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: calc(50% - 40px);
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+.glx-section .glx-section__play .glx-button-play{
+	width: 80px;
+	height: 80px;
+	background-image: linear-gradient(270deg,#6b0df9 0,#c60ce2);
+	border: none;
+	border-radius: 50%;
+	padding: 0;
+	margin: 0 auto;
+	display: block;
+	box-shadow: 0 8px 32px 8px rgba(0,0,0,.65),0 8px 108.8px 51.2px rgba(194,46,255,.82);
+	cursor: pointer;
+	outline: none;
+}
+.glx-section .glx-section__play .glx-button-play:after{
+	content: "";
+	position: absolute;
+	border-width: 15px 0 15px 24px;
+	border-style: solid;
+	border-color: transparent transparent transparent #FFF;
+	top: calc(50% - 15px);
+	right: calc(50% - 16px);
+}
+.glx-section .glx-section__bottom{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+.glx-section .glx-section__bottom .glx-section__inner{
+	position: relative;
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.glx-section .glx-section__bottom p.glx-section__info{
+	position: relative;
+	max-width: 100%;
+	font-size: 22px;
+	font-family: 'Bellota', cursive;
+	line-height: 32px;
+	margin: 20px 0;
+	font-weight: 300;
+}
+.glx-section .glx-section__bottom .glx-button-download,
+.bg-download-faq .glx-section--download .glx-section__bottom .glx-button-download{
+	position: relative;
+	background: #a27fcf;
+	font: 700 30px 'Lato', sans-serif;
+	color: #FFF;
+	text-transform: uppercase;
+	word-spacing: 2px;
+	letter-spacing: 1px;
+	padding: 20px 36px;
+	margin: 33px auto 18px;
+	outline: none;
+	border: none;
+	border-radius: 7px;
+	text-decoration: none;
+	cursor: pointer;
+	max-width: 600px;
+	display: block;
+}
+.glx-section .glx-section__bottom .glx-section__disclaimer,
+.bg-download-faq .glx-section--download .glx-section__bottom .glx-section__disclaimer{
+	font-size: 18px;
+	font-weight: 300;
+	font-family: 'Bellota', cursive;
+	line-height: 26px;
+	padding: 0;
+	margin: 0 auto 40px;
+	color: #a83df1;
+	position: relative;
+	max-width: 600px;
+}
+.glx-section .glx-section__bottom .glx-section__disclaimer a{
+	position: relative;
+	color: #a83df1;
+	text-decoration: underline;
+	cursor: pointer;
+}
+/* End With glx-section glx-section--intro */
+/* Start With glx-section--quotes */
+.glx-section--quotes {
+	background-image: url('https://gogalaxy.gog-statics.com/build/images/bg-quotes-1920-bad64c13.jpg');
+	height: 191px;
+	background-repeat: no-repeat;
+	background-position: top;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.glx-section--quotes .glx-section__inner{
+	position: relative;
+	width: 1110px;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	font: 400 36px 'Bellota', cursive;
+	height: 100%;
+}
+.glx-section--quotes .glx-section__inner .glx-text-rotator{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+.glx-section--quotes .glx-section__inner .glx-text-rotator .glx-text-rotator__item{
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+}
+.glx-section--quotes .glx-section__inner .glx-text-rotator .glx-text-rotator__item.is-active{ visibility: visible; opacity: 1; }
+.glx-section--quotes .glx-section__inner .glx-text-rotator .glx-text-rotator__item q{ position: relative; display: inline; font-style: italic; }
+.glx-section--quotes .glx-section__inner .glx-text-rotator .glx-text-rotator__item cite{ font: 600 36px 'Lato', sans-serif; display: inline; }
+/* End With glx-section--quotes */
+/* Start With glx-section--your-games */
+.glx-section--your-games{
+	position: relative;
+	width: 100%;
+	background-image: url('https://gogalaxy.gog-statics.com/build/images/bg-your-games-1920-2c5d0d82.jpg');
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top: 470px;
+}
+.glx-section--your-games:after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 97px;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-image: url('https://gogalaxy.gog-statics.com/build/images/bg-quotes-gradient-1920-c1b3c6e8.png');
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.glx-section--your-games .glx-section__video{
+	position: absolute;
+	top: 114px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 600px;
+	right: 0;
+}
+.glx-section--your-games .glx-section__inner,
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--your-client .glx-section__inner{
+	position: relative;
+	width: 1140px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0;
+	z-index: 1;
+}
+.glx-section--your-games .glx-section__inner .glx-header,
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--your-client .glx-section__inner .glx-header{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	margin-bottom: 33px;
+}
+.glx-section--your-games .glx-section__inner .glx-header .glx-icon,
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--your-client .glx-section__inner .glx-header .glx-icon{
+	width: 80px;
+	height: 80px;
+}
+.glx-section--your-games .glx-section__inner .glx-header .glx-icon{
+	fill: #d54dff;
+	filter: drop-shadow(0 2px 12px rgba(0,0,0,.93)) drop-shadow(0 1px 40px rgba(212,29,255,.47));
+}
+.glx-section--your-games .glx-section__inner .glx-header h2,
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--your-client .glx-section__inner .glx-header h2{
+	position: relative;
+	font-size: 44px;
+	margin: 14px 0 9px;
+	padding: 0;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+	font-weight: 600;
+}
+.glx-section--your-games .glx-section__inner .glx-header h2{
+	background-image: linear-gradient(90deg,#d54dff,#b43afd);
+}
+.glx-section--your-games .glx-section__inner .glx-header p,
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--your-client .glx-section__inner .glx-header p{
+	margin: 0;
+	padding: 0;
+	font: 400 38px 'Bellota', cursive;
+	line-height: 52px;
+}
+.glx-section--your-games .glx-section__inner .glx-features-list,
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--your-client .glx-section__inner .glx-features-list{
+	position: relative;
+	width: 100%;
+	display: flow-root; /* inline-block */
+}
+.glx-section--your-games .glx-section__inner .glx-features-list .glx-features-list__element,
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--your-client .glx-section__inner .glx-features-list .glx-features-list__element{
+	position: relative;
+	max-width: 300px;
+	float: left;
+	clear: right;
+	margin-right: 40px;
+	margin-left: 40px;
+	padding-bottom: 25px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.glx-section--your-games .glx-section__inner .glx-features-list .glx-features-list__element:nth-of-type(4),
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--your-client .glx-section__inner .glx-features-list .glx-features-list__element:nth-of-type(4){ margin-left: 230px; }
+.glx-section--your-games .glx-section__inner .glx-features-list .glx-features-list__element .glx-icon,
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--your-client .glx-section__inner .glx-features-list .glx-features-list__element .glx-icon{
+	width: 56px;
+	height: 56px;
+	margin: 0 auto;
+}
+.glx-section--your-games .glx-section__inner .glx-features-list .glx-features-list__element .glx-icon{
+	filter: drop-shadow(0 2px 12px rgba(0,0,0,.93)) drop-shadow(0 1px 40px rgba(212,29,255,.47));
+	fill: #d54dff;
+}
+.glx-section--your-games .glx-section__inner .glx-features-list .glx-features-list__element h3,
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--your-client .glx-section__inner .glx-features-list .glx-features-list__element h3{
+	position: relative;
+	margin: 10px 0 7px;
+	padding: 0;
+	font: 700 20px 'Lato', sans-serif;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+.glx-section--your-games .glx-section__inner .glx-features-list .glx-features-list__element h3{
+		background-image: linear-gradient(90deg,#d54dff,#b43afd);
+}
+.glx-section--your-games .glx-section__inner .glx-features-list .glx-features-list__element h3 span{
+	position: absolute;
+	color: #0b0b17;
+	-webkit-text-fill-color: #0b0b17;
+	background-image: linear-gradient(270deg,#a8a8a8 0,#dfdfdf 98%);
+	font-size: 12px;
+	border-radius: 2px;
+	padding: 1px 5px;
+	margin-left: 5px;
+	top: 0;
+	text-transform: uppercase;
+}
+.glx-section--your-games .glx-section__inner .glx-features-list .glx-features-list__element p,
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--your-client .glx-section__inner .glx-features-list .glx-features-list__element p{
+	font: 400 18px 'Bellota', cursive;
+	position: relative;
+	color: #FFF;
+}
+/* End With glx-section--your-games */
+/* Start With glx-section--your-friends */
+.glx-section--your-friends{
+	position: relative;
+	width: 100%;
+	display: block;
+	background-image: url('https://gogalaxy.gog-statics.com/build/images/bg-your-friends-1920-329caa41.jpg');
+	background-position: top;
+	background-repeat: no-repeat;
+	padding-top: 266px;
+	min-height: 780px;
+	padding-bottom: 94px;
+}
+.glx-section--your-friends .glx-section__inner,
+.glx-section--your-privacy .glx-section__inner{
+	position: relative;
+	padding-left: 53.90625%;
+	padding-right: 20px;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+.glx-section--your-friends .glx-section__inner .glx-header,
+.glx-section--your-privacy .glx-section__inner .glx-header,
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--more .glx-section__inner .glx-header{
+	position: relative;
+	display: block;
+	padding-left: 100px;
+	margin-bottom: 50px;
+}
+.glx-section--your-friends .glx-section__inner .glx-header svg,
+.glx-section--your-privacy .glx-section__inner .glx-header svg,
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--more .glx-section__inner .glx-header svg{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	top: 0;
+	left: 0;
+}
+.glx-section--your-friends .glx-section__inner .glx-header svg{
+	fill: url(#grad-your-friends) #fecb00;
+	filter: drop-shadow(0 2px 12px rgba(0,0,0,.93)) drop-shadow(0 1px 40px rgba(254,199,0,.32));
+}
+.glx-section--your-friends .glx-section__inner .glx-header h2,
+.glx-section--your-privacy .glx-section__inner .glx-header h2,
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--more .glx-section__inner .glx-header h2{
+	position: relative;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+	font: 400 44px 'Lato', sans-serif;
+	margin: 14px 0;
+	padding: 0;
+}
+.glx-section--your-friends .glx-section__inner .glx-header h2{ background-image: linear-gradient(90deg,#fecb00,#fa9100); }
+.glx-section--your-friends .glx-section__inner .glx-header p,
+.glx-section--your-privacy .glx-section__inner .glx-header p,
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--more .glx-section__inner .glx-header p{
+	padding: 0;
+	margin: 0;
+	font: 300 41px 'Bellota', cursive;
+	line-height: 52px;
+}
+.glx-section--your-friends .glx-section__inner .glx-features-list,
+.glx-section--your-privacy .glx-section__inner .glx-features-list,
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--more .glx-section__inner .glx-features-list{
+	position: relative;
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+.glx-section--your-friends .glx-section__inner .glx-features-list .glx-features-list__element,
+.glx-section--your-privacy .glx-section__inner .glx-features-list .glx-features-list__element,
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--more .glx-section__inner .glx-features-list .glx-features-list__element{
+	position: relative;
+	padding-left: 100px;
+	margin-bottom: 35px;
+}
+.glx-section--your-friends .glx-section__inner .glx-features-list .glx-features-list__element svg,
+.glx-section--your-privacy .glx-section__inner .glx-features-list .glx-features-list__element svg,
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--more .glx-section__inner .glx-features-list .glx-features-list__element svg{
+	position: absolute;
+	top: 0;
+	width: 56px;
+	height: 56px;
+	left: 14px;
+}
+.glx-section--your-friends .glx-section__inner .glx-features-list .glx-features-list__element svg{
+	fill: url(#grad-your-friends) #fecb00;
+	filter: drop-shadow(0 2px 12px rgba(0,0,0,.93)) drop-shadow(0 1px 40px rgba(254,199,0,.32));
+}
+.glx-section--your-friends .glx-section__inner .glx-features-list .glx-features-list__element h3,
+.glx-section--your-privacy .glx-section__inner .glx-features-list .glx-features-list__element h3,
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--more .glx-section__inner .glx-features-list .glx-features-list__element h3{
+	position: relative;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+	font: 700 20px 'Lato', sans-serif;
+	margin: 0;
+	padding: 0;
+	padding-top: 16px;
+	margin-bottom: 5px;
+}
+.glx-section--your-friends .glx-section__inner .glx-features-list .glx-features-list__element h3{	background-image: linear-gradient(90deg,#fecb00,#fa9100); }
+.glx-section--your-friends .glx-section__inner .glx-features-list .glx-features-list__element h3 span{
+	position: absolute;
+	color: #0b0b17;
+	-webkit-text-fill-color: #0b0b17;
+	background-image: linear-gradient(270deg,#a8a8a8 0,#dfdfdf 98%);
+	font-size: 12px;
+	border-radius: 2px;
+	padding: 1px 5px;
+	margin-left: 5px;
+	top: 10px;
+	text-transform: uppercase;
+}
+.glx-section--your-friends .glx-section__inner .glx-features-list .glx-features-list__element p,
+.glx-section--your-privacy .glx-section__inner .glx-features-list .glx-features-list__element p,
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--more .glx-section__inner .glx-features-list .glx-features-list__element p{
+	padding: 0;
+	margin: 0;
+	font: 400 18px 'Bellota', cursive;
+	line-height: 22px;
+}
+/* End With glx-section--your-friends */
+/* Start With glx-section--your-privacy */
+.glx-section--your-privacy{
+	position: relative;
+	width: 100%;
+	display: block;
+	background-image: url('https://gogalaxy.gog-statics.com/build/images/bg-your-privacy-1920-534a32f6.jpg');
+	background-position: top;
+	background-repeat: no-repeat;
+	padding-top: 240px;
+	min-height: 780px;
+	padding-bottom: 325px;
+}
+.glx-section--your-privacy .glx-section__video-container{
+	position: absolute;
+	width: 1920px;
+	height: 990px;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.glx-section--your-privacy .glx-section__video-container:after{
+	content: "";
+	position: absolute;
+	background-image: url('https://gogalaxy.gog-statics.com/build/images/privacy-frame-de21ad25.png');
+	width: 1080px;
+	height: 990px;
+	left: 20px;
+	top: 0;
+}
+.glx-section--your-privacy .glx-section__video-container .glx-section__video{
+	position: relative;
+	width: 1080px;
+	height: 990px;
+}
+.glx-section--your-privacy .glx-section__inner .glx-header svg{ fill: url(#grad-your-privacy) #31f9e2; filter: drop-shadow(0 2px 12px rgba(0,0,0,.93)) drop-shadow(0 1px 40px #028e7e); }
+.glx-section--your-privacy .glx-section__inner .glx-header h2{ background-image: linear-gradient(90deg,#31f9e2,#1698bf); }
+.glx-section--your-privacy .glx-section__inner .glx-features-list .glx-features-list__element h3{ background-image: linear-gradient(90deg,#31f9e2,#1698bf); }
+.glx-section--your-privacy .glx-section__inner .glx-features-list .glx-features-list__element svg{ fill: url(#grad-your-privacy) #31f9e2; filter: drop-shadow(0 2px 12px rgba(0,0,0,.93)) drop-shadow(0 1px 40px #00b9a4); }
+/* End With glx-section--your-privacy */
+/* Start With bg-more-your-galaxy */
+.bg-more-your-galaxy{
+	background-image: url('https://gogalaxy.gog-statics.com/build/images/bg-more-your-galaxy-1920-4d78ea93.jpg');
+	position: relative;
+	width: 100%;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+.bg-more-your-galaxy:after{
+	content: "";
+	background-image: linear-gradient(0deg,#090813 0,rgba(9,8,19,0));
+	position: absolute;
+	top: -100px;
+	left: 0;
+	right: 0;
+	height: 100px;
+}
+.bg-more-your-galaxy::before {
+	content: "";
+	background-image: linear-gradient(180deg,#0a0815 0,rgba(10,8,21,0));
+	position: absolute;
+	bottom: -50px;
+	left: 0;
+	right: 0;
+	height: 50px;
+	display: block;
+}
+.bg-more-your-galaxy .glx-section__video-container{
+	position: absolute;
+	top: 758px;
+	left: 0;
+	right: 0;
+	height: 554px;
+}
+.bg-more-your-galaxy .glx-section__video-container video{
+	position: absolute;
+	width: 1088px;
+	height: 554px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow{
+	position: relative;
+	width: 100%;
+	display: block;
+}
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--more{
+	position: relative;
+	width: 100%;
+	text-align: left;
+}
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--more .glx-section__video-container--inner{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1920px;
+	height: 740px;
+}
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--more .glx-section__video-container--inner:after{
+	content: "";
+	background-image: url('https://gogalaxy.gog-statics.com/build/images/more-frame-234f412c.png');
+	position: absolute;
+	width: 1200px;
+	height: 740px;
+	top: 0;
+	background-position: top;
+	background-repeat: no-repeat;
+	right: 0;
+	left: 640px;
+}
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--more .glx-section__video-container--inner video{
+	position: absolute;
+	width: 1200px;
+	height: 740px;
+	right: 0;
+	top: 0;
+	left: 640px;
+}
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--more .glx-section__inner{
+	position: relative;
+  width: 1140px;
+  margin: 0 auto;
+}
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--more .glx-section__inner .glx-header,
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--more .glx-section__inner .glx-features-list{ max-width: 660px;}
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--more .glx-section__inner .glx-header svg{ fill: url(#grad-more) #00d498; }
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--more .glx-section__inner .glx-header h2{ background-image: linear-gradient(90deg,#00d498,#00d470); padding-top: 15px; }
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--more .glx-section__inner .glx-features-list .glx-features-list__element svg{ fill: url(#grad-more) #00d498; }
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--more .glx-section__inner .glx-features-list .glx-features-list__element h3{ background-image: linear-gradient(90deg,#00d498,#00d470); }
+
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--your-client{
+	position: relative;
+	width: 100%;
+	padding-top: 530px;
+	padding-bottom: 94px;
+}
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--your-client .glx-section__inner .glx-header .glx-icon{
+	fill:url(#grad-your-client) #d54dff;
+  -webkit-filter:drop-shadow(0 2px 12px rgba(0,0,0,.93)) drop-shadow(0 1px 40px rgba(212,29,255,.47));
+  filter:drop-shadow(0 2px 12px rgba(0,0,0,.93)) drop-shadow(0 1px 40px rgba(212,29,255,.47))
+}
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--your-client .glx-section__inner .glx-header h2{ background-image: linear-gradient(90deg,#d54dff,#b43afd); }
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--your-client .glx-section__inner .glx-features-list .glx-features-list__element .glx-icon{
+	fill: url(#grad-your-client) #d54dff;
+	-webkit-filter: drop-shadow(0 2px 12px rgba(0,0,0,.93)) drop-shadow(0 1px 40px rgba(212,29,255,.47));
+	filter: drop-shadow(0 2px 12px rgba(0,0,0,.93)) drop-shadow(0 1px 40px rgba(212,29,255,.47));
+}
+.bg-more-your-galaxy .bg-more-your-galaxy__shadow .glx-section--your-client .glx-section__inner .glx-features-list .glx-features-list__element h3{ background-image: linear-gradient(90deg,#d54dff,#b43afd); }
+/* End With bg-more-your-galaxy */
+/* Start WIth glx-section--survey */
+.glx-section--survey{
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.glx-section--survey .glx-section__inner{
+	position: relative;
+	width: 1110px;
+	margin: 0 auto;
+	text-align: center;
+}
+.glx-section--survey .glx-section__inner h2{
+	position: relative;
+  margin: 23px 0;
+  padding: 0;
+  text-align: center;
+  font: 400 44px 'Lato', sans-serif;
+  display: inline-block;
+}
+.glx-section--survey .glx-section__inner .glx-section__bottom{
+	position: relative;
+	margin: 19px auto 154px;
+}
+.glx-section--survey .glx-section__inner .glx-section__bottom a{
+	text-decoration: none;
+  background: #769ed9;
+  display: inline-block;
+  color: #FFF;
+  font: 400 32px 'Lato', sans-serif;
+  padding: 17px 38px;
+  border-radius: 5px;
+  min-width: 432px;
+  text-align: center;
+}
+/* End With glx-section--survey */
+/* Start With bg-download-faq */
+.bg-download-faq{
+	position: relative;
+	width: 100%;
+	background-repeat: no-repeat;
+	/* background-position: top;
+	background-image: url('../images/bg-download-faq.png');
+	background-size: cover; */
+	padding-bottom: 137px;
+}
+.bg-download-faq .glx-section--download{
+	position: relative;
+	max-width: 840px;
+	margin: 0 auto;
+	padding-bottom: 190px;
+	text-align: center;
+}
+.bg-download-faq .glx-section--download .glx-section__inner{
+	position: relative;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+}
+.bg-download-faq .glx-section--download .glx-section__inner img{
+	padding: 37px 0 50px;
+	max-width: 111px;
+}
+.bg-download-faq .glx-section--download .glx-section__bottom{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+.bg-download-faq .glx-section--download .glx-section__bottom .glx-button-download{ margin-top: 51px; }
+.bg-download-faq .glx-section--download .glx-section__bottom .glx-section__disclaimer{ max-width: 490px; margin-bottom: 8px; }
+.bg-download-faq .glx-section--download .glx-section__bottom .glx-section__terms{
+	color: #9668c8;
+	text-decoration: underline;
+	font-family: 'Bellota', cursive;
+	font-weight: 300;
+	font-size: 18px;
+	cursor: pointer;
+	outline: none;
+	line-height: 24px;
+}
+.bg-download-faq .glx-section--faq{
+	position: relative;
+	width: 1140px;
+	margin: 0 auto;
+	max-height: 650px;
+	padding-bottom: 120px;
+	z-index: 1;
+}
+.bg-download-faq .glx-section--faq .glx-header{
+	position: relative;
+	width: 100%;
+	margin-bottom: 50px;
+	padding: 0;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFF;
+}
+.bg-download-faq .glx-section--faq .glx-header:after{
+	content: "";
+	position: absolute;
+	bottom: -100%;
+	left: 0;
+	right: 0;
+	background-image: url('https://gogalaxy.gog-statics.com/build/images/separator-af4bb87e.svg');
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 32px;
+}
+.bg-download-faq .glx-section--faq .glx-header h2{
+	position: relative;
+	font: 400 44px 'Lato', sans-serif;
+	margin: 14px 0 9px;
+}
+.bg-download-faq .glx-section--faq .glx-faq-list{
+	position: relative;
+	width: 100%;
+	display: inline-block;
+}
+.bg-download-faq .glx-section--faq .glx-faq-list .glx-list{
+	position: relative;
+	width: 50%;
+	float: left;
+	clear: right;
+}
+.bg-download-faq .glx-section--faq .glx-faq-list .glx-list:first-child{	padding-right: 20px; }
+.bg-download-faq .glx-section--faq .glx-faq-list .glx-list:last-child{	padding-left: 20px; }
+.bg-download-faq .glx-section--faq .glx-faq-list .glx-list .glx-faq-list__item{
+	position: relative;
+	padding: 13px 32px 19px 51px;
+	width: 100%;
+	margin: 0;
+}
+.bg-download-faq .glx-section--faq .glx-faq-list .glx-list .glx-faq-list__item:after{
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	background: #c60de2;
+	border-radius: 50%;
+	top: 21px;
+	left: 21px;
+}
+.bg-download-faq .glx-section--faq .glx-faq-list .glx-list .glx-faq-list__item.is-collapsed{ margin-bottom: 0; }
+.bg-download-faq .glx-section--faq .glx-faq-list .glx-list .glx-faq-list__item.is-expanded{
+	border-radius: 4px;
+	background-color: rgba(192,108,199,.1);
+	margin-bottom: 22px;
+}
+.bg-download-faq .glx-section--faq .glx-faq-list .glx-list .glx-faq-list__item h3 {
+	position: relative;
+	font: 300 20px 'Lato', sans-serif;
+	color: #FFF;
+	margin: 0;
+	line-height: 26px;
+	cursor: pointer;
+}
+.bg-download-faq .glx-section--faq .glx-faq-list .glx-list .glx-faq-list__item p{
+	position: relative;
+	width: 100%;
+	padding: 0;
+	font-family: 'Bellota', cursive;
+	font-weight: 400;
+	font-size: 16px;
+	color: #bb97e1;
+	line-height: 26px;
+	overflow: hidden;
+}
+.bg-download-faq .glx-section--faq .glx-faq-list .glx-list .glx-faq-list__item p a{
+	position: relative;
+	text-decoration: underline;
+	cursor: pointer;
+	color: currentColor;
+}
+.bg-download-faq .glx-section--faq .glx-faq-list .glx-list .is-collapsed p{
+	margin: 0;
+	max-height: 0;
+}
+.bg-download-faq .glx-section--faq .glx-faq-list .glx-list .is-expanded p{
+	margin: 9px 0;
+	max-height: 999px;
+}
+/* End With bg-download-faq */
+/* Start With glx-footer */
+.glx-footer{
+	position: relative;
+	width: 100%;
+	padding-top: 460px;
+	padding-bottom: 10px;
+	/*background-image: url('../images/glx-footer.jpg');
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;*/
+}
+.glx-footer:after{
+	content: "";
+	background-image: linear-gradient(270deg,#6b0df9 0,#c60ce2);
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 3px;
+	bottom: 0;
+}
+.glx-footer .glx-footer__inner{
+	position: relative;
+	max-width: 770px;
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+.glx-footer .glx-footer__inner .glx-footer__logo-gog{
+	position: relative;
+	max-width: 140px;
+	margin: 0 auto 50px;
+	padding: 0;
+}
+.glx-footer .glx-footer__inner h2{
+	position: relative;
+	font: 300 44px 'Lato', sans-serif;
+	margin: 0 0 30px 0;
+	text-align: center;
+	padding: 0;
+}
+.glx-footer .glx-footer__inner p{
+	position: relative;
+	font-family: 'Bellota', cursive;
+	font-size: 19px;
+	font-weight: 400;
+	margin: 15px 0;
+	line-height: 26px;
+}
+.glx-footer .glx-footer__inner .glx-footer__socials{
+	position: relative;
+	margin: 40px 0 30px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.glx-footer .glx-footer__inner .glx-footer__socials .icon-gog{
+	position: relative;
+	color: #c10de4;
+	padding: 0 30px;
+	margin: 0;
+}
+.glx-footer .glx-footer__inner .glx-footer__socials .icon-gog:hover{ filter: brightness(1.25); }
+.glx-footer .glx-footer__inner .glx-footer__socials .twitter-gog { color: #9c0ded; }
+.glx-footer .glx-footer__inner .glx-footer__socials .twitch-gog { color: #740df7; }
+.glx-footer .glx-footer__inner .glx-footer__socials .icon-gog svg{
+	fill: #c10de4;
+	width: 56px;
+	height: 56px;
+}
+.glx-footer .glx-footer__inner .glx-langs{
+	position: relative;
+	padding: 30px;
+	font: 400 22px 'Lato', sans-serif;
+	text-transform: capitalize;
+	width: max-content;
+	margin: 0 auto;
+}
+.glx-footer .glx-footer__inner .glx-langs span{
+	position: relative;
+	pointer-events: none;
+}
+.glx-footer .glx-footer__inner .glx-langs span:after{
+	content: "";
+	position: absolute;
+	border-width: 5px 3px 0;
+	border-color: #FFF transparent transparent transparent;
+	border-style: solid;
+	top: 9px;
+	right: -10px;
+}
+.glx-footer .glx-footer__inner .glx-langs ul {
+	display: none;
+	position: absolute;
+	margin: 0 auto;
+	list-style: none;
+	padding: 5px 15px;
+	width: 150px;
+	right: 0;
+	top: -273px;
+	background: #000;
+	bottom: auto;
+	border-radius: 3px;
+	color: #FFF;
+	left: 0;
+}
+.glx-footer .glx-footer__inner .glx-langs ul li {
+	padding: 10px 0;
+	margin: 0;
+	text-align: left;
+	display: block;
+	position: relative;
+}
+.glx-footer .glx-footer__inner .glx-langs ul li input {
+	position: relative;
+	padding: 0 10px;
+	margin: 0;
+	width: 100%;
+	background: none;
+	border: none;
+	text-align: left;
+}
+.glx-footer .glx-footer__inner .glx-footer__nav{
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.glx-footer .glx-footer__inner .glx-footer__nav a{
+	color: #9b6dcc;
+	padding: 10px 12px;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: 'Bellota', cursive;
+	font-size: 17px;
+	font-weight: 700;
+}
+.glx-footer .glx-footer__inner .glx-footer__disclaimer{
+	position: relative;
+	max-width: 570px;
+	text-align: center;
+	margin: 30px auto 0;
+	font-family: 'Bellota', cursive;
+	font-size: 16px;
+	line-height: 25px;
+	color: #9b6dcc;
+}
+.glx-footer .glx-footer__inner .glx-footer__copyrights{
+	position: relative;
+	font-family: 'Bellota', cursive;
+	color: #9b6dcc;
+	font-size: 16px;
+	font-weight: 400;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 53px;
+}
+.glx-footer .glx-footer__inner .glx-footer__copyrights a {
+	background-image: url('https://gogalaxy.gog-statics.com/build/images/logo-cd-projekt-d5a46a3f.svg');
+  position: relative;
+  width: 93px;
+  height: 51px;
+  display: flex;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0 7px 0 9px;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+	margin-top: -8px;
+}
+
+/* End With glx-footer */
+/* Start With c-cookies */
+.c-cookies{
+	position: fixed;
+	width: 365px;
+	right: 5px;
+	z-index: 1;
+	margin: 20px 0;
+	bottom: 0;
+}
+.c-cookies .c-cookies__frame{
+	position: relative;
+	width: 100%;
+	background: #000;
+	padding: 30px 25px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+.c-cookies .c-cookies__frame:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(180deg,rgba(198,13,226,.45),rgba(108,13,249,.45));
+	bottom: 0;
+	margin: -2px;
+	z-index: -1;
+	border-radius: 4px;
+}
+.c-cookies .c-cookies__frame .c-cookies__p{
+	position: relative;
+	display: block;
+	margin: 0 0 20px;
+	color: #8c8c8c;
+	font-family: 'Bellota', cursive;
+	font-weight: 700;
+	font-size: 14px;
+}
+.c-cookies .c-cookies__frame .c-cookies__p a{
+	position: relative;
+	text-decoration: none;
+	border-bottom: 1px solid #272727;
+	color: currentColor;
+	cursor: pointer;
+	font-size: 15px;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.c-cookies .c-cookies__frame .c-cookies__close{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	text-decoration: none;
+	background-image: linear-gradient(90deg,#e646ff,#8737ff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font: 400 14px 'Lato', sans-serif;
+	cursor: pointer;
+}
+.c-cookies .c-cookies__frame .c-cookies__close form input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border: none;
+	padding: 0;
+	z-index: 1;
+	height: 100%;
+	margin: 0;
+	opacity: 0;
+}
+.c-cookies .c-cookies__frame .c-cookies__close svg{
+	width: 16px;
+	height: 16px;
+	fill: currentColor;
+	margin-right: 15px;
+	position: relative;
+}
+/* End With c-cookies */
