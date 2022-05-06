@@ -5,6 +5,6 @@
 
 ###### last one
 
-** bold text **
+**bold text**
 
-* italic text *
+*italic text*
