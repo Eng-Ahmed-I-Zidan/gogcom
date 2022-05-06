@@ -1,6 +1,6 @@
 <?php
   /*
-    * months name [can use ( substr(string, first, end) )]
+    * months name [can use ( substr(string, first, end) )] months
     [01] January
     [02] February
     [03] March
