@@ -9,9 +9,9 @@
 
 *italic text*
 
-link (Google)[http://www.google.com]
+link [Google](http://www.google.com)
 
-link !(image)[https://myoctocat.com/assets/images/base-octocat.svg]
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
 
 - list
 - list
